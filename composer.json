@@ -1,0 +1,16 @@
+{
+    "name": "MfApi",
+    "description": "REST API with ZF2",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2",
+        "REST Api"
+    ],
+    "homepage": "https://github.com/resourcemode/MfApi",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.3.*",
+        "zionsg/ZnZend": "dev-master"
+    }
+}
