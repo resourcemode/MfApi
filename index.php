@@ -6,4 +6,4 @@
  * Time: 7:50 PM
  */
 header("Location:public/main.php/");
-exit();
+//exit();
