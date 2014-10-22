@@ -17,7 +17,7 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+        var_dump('welcome page - test');
     }
     
     public function testAction()
