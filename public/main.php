@@ -7,13 +7,13 @@ if (php_sapi_name() === 'cli-server' && is_file(__DIR__ . parse_url($_SERVER['RE
 }
 
 // Composer autoloading
-if (file_exists('vendor/autoload.php')) {
-    $loader = include 'vendor/autoload.php';
-}
-
-if (class_exists('Zend\Loader\AutoloaderFactory')) {
-    return;
-}
+//if (file_exists('vendor/autoload.php')) {
+//    $loader = include 'vendor/autoload.php';
+//}
+//
+//if (class_exists('Zend\Loader\AutoloaderFactory')) {
+//    return;
+//}
 
 $zf2Path = false;
 
@@ -27,8 +27,8 @@ if (is_dir('vendor/ZF2/')) {
 
 if ($zf2Path) {
     if (isset($loader)) {
-//        $loader->add('Zend', $zf2Path);
-//        $loader->add('ZendXml', $zf2Path);
+        $loader->add('Zend', $zf2Path);
+        $loader->add('ZendXml', $zf2Path);
     } else {
         include $zf2Path . '/Zend/Loader/AutoloaderFactory.php';
         Zend\Loader\AutoloaderFactory::factory(array(
