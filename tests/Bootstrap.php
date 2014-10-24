@@ -81,15 +81,12 @@ function initAutoloader()
             $loader = include 'vendor/autoload.php';
         }
 
-        //var_dump($zf2Path); exit;
-
         if (!$zf2Path) {
             throw new RuntimeException(
                 'Unable to load ZF2. Run `php composer.phar install` or define a ZF2_PATH environment variable.'
             );
         }
 
-        //$test = $zf2Path . '/Zend/Loader/AutoloaderFactory.php';
         include $zf2Path . '/Zend/Loader/AutoloaderFactory.php';
     }
 
