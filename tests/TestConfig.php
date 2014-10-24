@@ -5,7 +5,6 @@ return array(
         'Api',
         'Application', // change this to your module
     ),
-
     'module_listener_options' => array(
         'config_glob_paths'    => array(
             '../../../config/autoload/{,*.}{global,local}.php',
