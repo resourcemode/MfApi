@@ -1,3 +1,3 @@
 MfApi
 =====
-RESTful Api based on ZF2 (Work in progress)
+RESTful Api based on ZF2
